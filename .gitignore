@@ -1,0 +1,45 @@
+.DS_Store
+
+# toku2001 module (Gradle/Spring Boot)
+/toku2001/HELP.md
+/toku2001/.gradle/
+/toku2001/build/
+/toku2001/*.log
+/toku2001/logs/
+/toku2001/src/main/resources/application-prod.properties
+/toku2001/src/main/resources/application-dev.properties
+
+!/toku2001/gradle/wrapper/gradle-wrapper.jar
+!/toku2001/src/main/**/build/
+!/toku2001/src/test/**/build/
+
+### STS ###
+/toku2001/.apt_generated
+/toku2001/.classpath
+/toku2001/.factorypath
+/toku2001/.project
+/toku2001/.settings/
+/toku2001/.springBeans
+/toku2001/.sts4-cache
+/toku2001/bin/
+!/toku2001/src/main/**/bin/
+!/toku2001/src/test/**/bin/
+
+### IntelliJ IDEA ###
+/toku2001/.idea/
+/toku2001/*.iws
+/toku2001/*.iml
+/toku2001/*.ipr
+/toku2001/out/
+!/toku2001/src/main/**/out/
+!/toku2001/src/test/**/out/
+
+### NetBeans ###
+/toku2001/nbproject/private/
+/toku2001/nbbuild/
+/toku2001/dist/
+/toku2001/nbdist/
+/toku2001/.nb-gradle/
+
+### VS Code ###
+/toku2001/.vscode/
