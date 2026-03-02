@@ -8,6 +8,7 @@
 /toku2001/logs/
 /toku2001/src/main/resources/application-prod.properties
 /toku2001/src/main/resources/application-dev.properties
+/toku2001/data
 
 !/toku2001/gradle/wrapper/gradle-wrapper.jar
 !/toku2001/src/main/**/build/
