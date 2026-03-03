@@ -10,12 +10,17 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
+    private static final String[] PUBLIC_POST_ENDPOINTS = {
+        "/batch/postHealthInfo",
+        "/debug/health-auto-exports"
+    };
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .csrf(csrf -> csrf.ignoringRequestMatchers("/batch/postHealthInfo"))
+            .csrf(csrf -> csrf.ignoringRequestMatchers(PUBLIC_POST_ENDPOINTS))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers(HttpMethod.POST, "/batch/postHealthInfo").permitAll()
+                .requestMatchers(HttpMethod.POST, PUBLIC_POST_ENDPOINTS).permitAll()
                 .anyRequest().authenticated()
             )
             .httpBasic(Customizer.withDefaults());
