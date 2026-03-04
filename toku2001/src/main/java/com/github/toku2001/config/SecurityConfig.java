@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     private static final String[] PUBLIC_POST_ENDPOINTS = {
-        "/batch/postHealthInfo",
+        "/batch/postSleepInfo",
         "/debug/health-auto-exports"
     };
 
