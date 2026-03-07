@@ -12,6 +12,7 @@ public class SecurityConfig {
 
     private static final String[] PUBLIC_POST_ENDPOINTS = {
         "/batch/postSleepInfo",
+        "/batch/postHeartRateInfo",
         "/debug/health-auto-exports"
     };
 
